@@ -14,11 +14,12 @@ class TargetSpider(scrapy.Spider):
         yield scrapy.FormRequest(url=self.url,dont_filter=True,callback=self.parse)
 
     def parse(self, response):
-        with open("data.html","wb+") as file:
-            file.write(response.body)
+        # with open("data.html","wb+") as file:
+        #     file.write(response.body)
         item= CodingTestItem()
         dynamic_data= response.xpath("//*[@id='pageBodyContainer']/script/text()").get(default="").strip()
         json_data = chompjs.parse_js_object(dynamic_data)
+        print(dynamic_data)
         price,currency = extract_price(json_data)
         tcin,upc = extract_tcin_upc(json_data)
         item["url"] = response.url

@@ -1,0 +1,58 @@
+{
+    "@graph": [
+        {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Toddler Girls' Shanel Colorblock Ankle Strap Sandals - Cat & Jack™ 5",
+            "brand": "Cat & Jack",
+            "image": "https://target.scene7.com/is/image/Target/GUEST_df8b3736-452e-4ffc-8904-32e51923771f",
+            "sku": "83816625",
+            "gtin13": "0195994905766",
+            "offers": {
+                "@type": "Offer",
+                "price": "19.99",
+                "priceCurrency": "USD",
+                "availability": "InStock",
+                "availableAtOrFrom": {
+                    "@type": "Place",
+                    "branchCode": "3991S"
+                },
+                "availableDeliveryMethod": "ParcelService",
+                "potentialAction": {
+                    "@type": "BuyAction"
+                },
+                "url": "https://www.target.com/p/toddler-girls-39-shanel-colorblock-ankle-strap-sandals-cat-38-jack-8482-5/-/A-83816625"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 0,
+                    "item": {
+                        "@id": "https://www.target.com/",
+                        "name": "Target"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "https://www.target.com/c/clothing-shoes-accessories/-/N-rdihz",
+                        "name": "Clothing, Shoes & Accessories"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "https://www.target.com/c/kids/-/N-xcoz4",
+                        "name": "Kids' Clothing"
+                    }
+                }
+            ]
+        }
+    ]
+}
